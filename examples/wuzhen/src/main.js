@@ -23,6 +23,10 @@ window.renderFrame = (t) => {
   const view = viewOverride ?? director.shotAt(t);
   S.render({ lightT: t, animT: t, view });
 };
+// 光照和动画分开的时刻（比如 README 动图：光照固定在一刻，船和布照常动）
+window.renderAt = (lightT, animT) => {
+  S.render({ lightT, animT, view: viewOverride ?? director.shotAt(lightT) });
+};
 window.setView = (v) => { viewOverride = v; };
 window.layout = layout;
 window.__three = { scene: S.scene, renderer: S.renderer, composer: S.composer, materials: S.materials }; // 调试用
