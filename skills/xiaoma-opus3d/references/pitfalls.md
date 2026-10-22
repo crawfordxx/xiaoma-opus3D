@@ -65,7 +65,7 @@
 - **自动降档只降不升**，否则在临界帧率上会来回跳。切回标签页时那一帧的大间隔不算。
 - **看不见时停渲染**：嵌在长页面里滚出屏幕、标签页切到后台时，`IntersectionObserver` + `document.hidden` 停掉渲染，省电。
 - **开发机帧率不代表普通设备。** M 系列 Mac 上三档都是 120fps，测不出差别。要求手机流畅时，守住 BRIEF 的预算（乌镇全场景约 700 万三角形、500 个 draw call，在中端设备上会很吃力；手机目标建议 150 万三角形、200 个 draw call 以内）。
-- **GitHub README 不能嵌交互模型。** JS、iframe、WebGL 都会被过滤。交互模型放 GitHub Pages，README 里放预览动图（链接到在线版）和漫游视频。动图控制在 5MB 以内（乌镇：560px 宽、10fps、96 色，4.8MB）；视频压到 720p（乌镇 70 秒，crf 27，14MB），GitHub 单文件上限 100MB。
+- **GitHub README 不能嵌交互模型。** JS、iframe、WebGL 都会被过滤。交互模型放 GitHub Pages，README 里放预览动图（链接到在线版）和漫游视频。动图控制在 5MB 以内（乌镇：560px 宽、10fps、96 色，4.8MB）；视频要注意两点：README 里的 `<video>` 标签和仓库里的 mp4 链接都不会出播放器，只有网页上传的视频附件（`github.com/user-attachments/assets/…`，单独一行）可以；免费账号的视频附件上限 10MB，超了只会显示“Failed to upload”。乌镇 70 秒：附件版 540p、crf 28、7.5MB；仓库里的清晰版 720p、crf 27、14MB（仓库单文件上限 100MB）。
 - **初始视角决定第一印象。** 高位斜视、顺着光线方向，让剪影、亮灯和地标同时入画。
 
 ## 导出视频（可选）

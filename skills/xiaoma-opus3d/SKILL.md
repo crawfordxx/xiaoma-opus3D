@@ -132,7 +132,7 @@ node scripts/test-viewer.mjs    # file:// 打开单文件，在像素比 1 和 2
 
 **要开源到 GitHub 时（可选）**：README 不能运行 WebGL，交互模型放到 GitHub Pages 上，README 里用两样东西展示：
 - 顶部放一张预览动图（相机绕场景转一圈），链接到 Pages 上的 `scene.html`。
-- 按附录导出一段漫游视频，压到 720p、20MB 以内放进 `docs/`，在 README 里用 `<video>` 嵌入，并附一个直接打开的链接兜底。
+- 按附录导出一段漫游视频。README 里的 `<video>` 标签会被 GitHub 过滤掉，能出播放器的只有网页上传的视频附件：压到 10MB 以内（免费账号上限），在任意 Issue 或评论框里上传（不用提交），拿到 `https://github.com/user-attachments/assets/…` 地址后单独一行贴进 README。再放一个清晰版到 `docs/`，附直接打开的链接兜底。
 
 ## 交付时告诉用户
 

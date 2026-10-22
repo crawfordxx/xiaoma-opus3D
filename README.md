@@ -14,9 +14,9 @@
 
 同一个场景导出的漫游视频：10 个镜头，每个都从一个小物件的特写拉远（灯笼穗、船橹入水、望柱石刻、蓝印花布、河埠头、滴水瓦、花窗、柳枝、酒旗、逆光柳叶），最后落在朝西的航拍上。
 
-<video src="https://raw.githubusercontent.com/crawfordxx/xiaoma-opus3D/main/docs/wuzhen.mp4" controls muted width="100%"></video>
+https://github.com/user-attachments/assets/5d7a7a41-ed79-48b5-9c92-7c2dab6f9f89
 
-看不到播放器的话：[直接打开视频](https://crawfordxx.github.io/xiaoma-opus3D/wuzhen.mp4)（720p，14 MB）。
+看不到播放器的话：[打开 720p 版](https://crawfordxx.github.io/xiaoma-opus3D/wuzhen.mp4)（14 MB）。
 
 ## 交付物
 
