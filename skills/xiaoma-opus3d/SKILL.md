@@ -130,9 +130,9 @@ node scripts/test-viewer.mjs    # file:// 打开单文件，在像素比 1 和 2
 
 **过关条件**：test-viewer 全部 ✓；在用户的浏览器里打开 `embed-demo.html` 确认能用。
 
-**要开源到 GitHub 时（可选）**：README 不能运行 WebGL，用两样东西代替：
-- 顶部放一张预览动图，链接到 GitHub Pages 上的 `scene.html`。
-- 用 `node scripts/export-stl.mjs` 导出白模，以 ```stl 代码块贴进 README。GitHub 会把它渲染成可以拖动、缩放的 3D 预览（只有体块，没有颜色），控制在约 2000 个三角形以内。
+**要开源到 GitHub 时（可选）**：README 不能运行 WebGL，交互模型放到 GitHub Pages 上，README 里用两样东西展示：
+- 顶部放一张预览动图（相机绕场景转一圈），链接到 Pages 上的 `scene.html`。
+- 按附录导出一段漫游视频，压到 720p、20MB 以内放进 `docs/`，在 README 里用 `<video>` 嵌入，并附一个直接打开的链接兜底。
 
 ## 交付时告诉用户
 
@@ -157,4 +157,4 @@ node scripts/test-viewer.mjs    # file:// 打开单文件，在像素比 1 和 2
 | `references/examples/wuzhen.md` | 完整实战：区块划分、交互模型参数、改动轨迹 |
 | `references/examples/temple.md` | 原版寺庙提示词怎么映射成参数 |
 | `assets/template/` | 项目骨架，第 1 阶段复制 |
-| `scripts/` | 复制到项目的 scripts/。交互模型用：gpu-check、serve、browser、shot、views、check-layout、plan-svg、svg2png、montage、nan-test、build、test-viewer、export-stl；视频附录另用：check-cameras、contact、render |
+| `scripts/` | 复制到项目的 scripts/。交互模型用：gpu-check、serve、browser、shot、views、check-layout、plan-svg、svg2png、montage、nan-test、build、test-viewer；视频附录另用：check-cameras、contact、render |
